@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="height:100vh;width: 100%;display: flex;flex-direction: column;">
+    <h1 *ngIf="currentItem.name" style="width:50px;text-align: center;">{{currentItem.name}}</h1>
+  <img *ngIf="currentImage" (touchstart)="swipe($event, 'start')" (touchend)="swipe($event, 'end')"
+    [attr.src]="currentImage" style="width:100%;height: calc(100vh-150px);">
+  
+  <div style="width:100%;height:56px;position: relative;">
+    <button *ngIf="currentIndex>0" mat-stroked-button (click)="clickPrev()" color="primary"
+      style="float: left;margin:10px;margin-bottom:10px;">Prev</button>
+
+    <button mat-stroked-button (click)="processItem()" color="primary"
+      style="margin:10px;margin-bottom:10px;left: 50%;">Speak</button>
+
+    <button *ngIf="currentIndex < itemCollection.length-1" mat-stroked-button (click)="clickNext()" color="primary"
+      style="float: right;margin:10px;margin-bottom:10px;">Next</button>
+  </div>
+</div>

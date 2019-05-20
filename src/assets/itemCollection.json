@@ -1,0 +1,18 @@
+[
+    {
+        "imagePath": "img_lights_wide.jpg",
+        "audioPath": "horse.ogv"
+    },
+    {
+        "imagePath": "img_mountains_wide.jpg",
+        "audioPath": "horse.ogv"
+    },
+    {
+        "imagePath": "img_nature_wide.jpg",
+        "audioPath": "horse.ogv"
+    },
+    {
+        "imagePath": "img_snow_wide.jpg",
+        "audioPath": "horse.ogv"
+    }
+]
